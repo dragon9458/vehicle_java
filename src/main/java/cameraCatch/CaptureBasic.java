@@ -1,7 +1,6 @@
 package cameraCatch;
 
 
-import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import java.awt.*;
@@ -11,20 +10,24 @@ import org.opencv.core.Mat;
 import org.opencv.videoio.VideoCapture;
 import org.opencv.videoio.Videoio;
 
-import common.Constants;
 import imageProcess.ImageProcess;
 import jFrameBeans.MyJframe;
 
 public class CaptureBasic extends JPanel {
-    private static final long serialVersionUID = 1L;
+
+    private BufferedImage mImg;
+
+    public static void main(String[] args) {
+        CaptureBasic captureBasic = new CaptureBasic();
+        captureBasic.cameraStart();
+    }
+
     /**
      * BufferedImage是Image的一个子类，Image和BufferedImage的主要作用就是将一副图片加载到内存中。
      * BufferedImage生成的图片在内存里有一个图像缓冲区，利用这个缓冲区我们可以很方便的操作这个图片，通常用来做图片修改操作如大小变换、图片变灰、设置图片透明或不透明等。
      * Java将一副图片加载到内存中的方法是：BufferedImage bufferedImage = ImageIO.read(new FileInputStream(filePath));
      */
-    private BufferedImage mImg;
-
-    public static void main(String[] args) {
+    public void cameraStart(){
         try {
             /**
              * 加载由LabNAMEARGUDEN指定的本机库。
@@ -40,7 +43,8 @@ public class CaptureBasic extends JPanel {
 
             //Mat capImg = new Mat();
             //开启第一个摄像头
-            VideoCapture capture = new VideoCapture(0);
+            VideoCapture capture1 = new VideoCapture(0);
+            VideoCapture capture = new VideoCapture(1);
             //视频比例
             int height = (int) capture.get(Videoio.CAP_PROP_FRAME_HEIGHT);
             int width = (int) capture.get(Videoio.CAP_PROP_FRAME_WIDTH);
@@ -71,7 +75,6 @@ public class CaptureBasic extends JPanel {
 
                 //图像处理
                 rotFrameShow= ImageProcess.imageProcess(frame,rotFrame,perspectiveMat);
-
                 myJframe.setSize(rotFrameShow.rows(),rotFrameShow.rows());
                 //处理摄像头获取mat
                 panel.mImg = panel.mat2BI(rotFrameShow);

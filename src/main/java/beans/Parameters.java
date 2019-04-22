@@ -1,7 +1,7 @@
 package beans;
 
-import common.Constants;
-import common.PropertiesLoader;
+import params.Constants;
+import params.PropertiesLoader;
 /**
  * 透视变换矩阵参数
  * @author dragon

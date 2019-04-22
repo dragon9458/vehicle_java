@@ -3,7 +3,7 @@ package jFrameBeans;
 
 import javax.swing.JFrame;
 
-import common.Constants;
+import params.Constants;
 
 public class MyJframe extends JFrame{
 
