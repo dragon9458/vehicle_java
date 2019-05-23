@@ -1,7 +1,7 @@
 package Utils;
 
 import Singleton.SingletonMethodHolder;
-import org.bytedeco.javacpp.opencv_core;
+import org.bytedeco.javacpp.helper.opencv_core.CvArr;
 import org.bytedeco.javacpp.opencv_core.Point;
 import org.bytedeco.javacpp.opencv_core.Size;
 import org.bytedeco.javacpp.opencv_core.Mat;
@@ -18,26 +18,16 @@ import java.util.List;
  */
 public class ApillarVedioUtils {
 
-    public static Frame apillarVedioUtil (Mat oldMat) {
+    public Frame apillarVedioUtil (Mat oldMat) {
 
-
-
-        //获取透视变换矩阵
-
-
-
-
-        //透视变换,参数依次为源图像,目标图像,旋转矩阵,目标图像尺寸
-        //opencv_imgproc.warpPerspective();
-
-        //缩放图像 依次源图像, 目标图像, 尺寸, CV_INTER_LINE
-        //opencv_imgproc.resize();
-
-        //图像裁剪
+        //图像裁剪 缩放
         Rect rect = new Rect(220 ,160, 200,320 );
         Mat resultFrom = new Mat(oldMat,rect);
         Mat resultTo = new Mat();
-        opencv_imgproc.resize(resultFrom,resultTo,new Size(720,1280));
+        opencv_imgproc.resize(resultFrom,resultTo,new Size(720,1366));
+
+        //透视仿射变换
+        //opencv_imgproc.warpPerspective(resultTo, resultFrom, ApillarVedioUtils.getPerspectiveMatrix(),resultTo.size());
 
         return SingletonMethodHolder.getOpenCVFrameConverter().convert(resultTo);
     }

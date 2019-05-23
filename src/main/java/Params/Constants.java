@@ -14,7 +14,7 @@ public interface Constants {
     int APILLAR_WIDTH = 720;
     int APILLAR_HIGHT = 1280;
 
-    int BINOCULAR_W = 320;
+    int BINOCULAR_W = 640;
     int BINOCULAR_H = 240;
 
 

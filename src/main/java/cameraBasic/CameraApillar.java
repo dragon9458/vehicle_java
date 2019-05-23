@@ -40,6 +40,8 @@ public class CameraApillar implements Runnable{
             canvasAll.setAlwaysOnTop(true);
             Frame frameAll;
 
+            ApillarVedioUtils apillarVedioUtils = new ApillarVedioUtils();
+
             while(true) {
                 long start = new Date().getTime();
 
@@ -49,7 +51,7 @@ public class CameraApillar implements Runnable{
                 canvasAll.showImage(frameAll);
 
                 //图像处理过程
-                frame = ApillarVedioUtils.apillarVedioUtil(SingletonMethodHolder.getOpenCVFrameConverter().convertToMat(frameAll));
+                frame = apillarVedioUtils.apillarVedioUtil(SingletonMethodHolder.getOpenCVFrameConverter().convertToMat(frameAll));
 
                 Mat mat = SingletonMethodHolder.getOpenCVFrameConverter().convertToMat(frame);
                 canvas.showImage(frame);//获取摄像头图像并放到窗口上显示， 这里的Frame frame=grabber.grab(); frame是一帧视频图像
@@ -57,7 +59,7 @@ public class CameraApillar implements Runnable{
                 //Thread.sleep(50);//50毫秒刷新一次图像
 
                 long end = new Date().getTime();
-                System.out.println(end - start);
+                //System.out.println(end - start);
             }
         } catch (Exception e) {
             e.printStackTrace();

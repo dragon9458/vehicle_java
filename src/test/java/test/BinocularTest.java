@@ -19,14 +19,14 @@ public class BinocularTest {
 
     public void binocularShow(){
         try{
-            OpenCVFrameGrabber grabberLeft = new OpenCVFrameGrabber(1);
+            OpenCVFrameGrabber grabberLeft = new OpenCVFrameGrabber(0);
             grabberLeft.start();   //开始获取摄像头数据
-            OpenCVFrameGrabber grabberRight = new OpenCVFrameGrabber(0);
+            OpenCVFrameGrabber grabberRight = new OpenCVFrameGrabber(1);
             grabberRight.start();
 
 
-            CanvasFrame canvasLeft = new CanvasFrame("2");//新建一个窗口
-            CanvasFrame canvasRight = new CanvasFrame("3");
+            CanvasFrame canvasLeft = new CanvasFrame("LEFT");//新建一个窗口
+            CanvasFrame canvasRight = new CanvasFrame("RIGHT");
 
 
             canvasLeft.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -57,10 +57,10 @@ public class BinocularTest {
 
     public void binocularShowOne(){
         try{
-            OpenCVFrameGrabber grabberLeft = new OpenCVFrameGrabber(2);
+            OpenCVFrameGrabber grabberLeft = new OpenCVFrameGrabber(0);
             grabberLeft.start();   //开始获取摄像头数据
 
-            CanvasFrame canvasLeft = new CanvasFrame("3");
+            CanvasFrame canvasLeft = new CanvasFrame("0");
 
 
             canvasLeft.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -80,6 +80,9 @@ public class BinocularTest {
 
     }
     public static void main(String[] args){
+
+        //new BinocularTest().binocularShow();
+
         new BinocularTest().binocularShow();
     }
 
