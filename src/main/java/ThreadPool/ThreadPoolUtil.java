@@ -15,9 +15,10 @@ public class ThreadPoolUtil {
 
 
         executorService.execute(new CameraApillar(Constants.ONE, Constants.CAMERA_RIGHT_A));
+        sleep();
         executorService.execute(new CameraApillar(Constants.TWO, Constants.CAMERA_LEFT_A));
 
-
+        sleep();
         executorService.execute(new CameraBinocular(Constants.THREE, Constants.CAMERA_RIGHT_E));
         sleep();
         executorService.execute(new CameraBinocular(Constants.ZERO, Constants.CAMERA_LEFT_E));
