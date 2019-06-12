@@ -15,23 +15,12 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
-        </dependency>
 
+        <!-- https://mvnrepository.com/artifact/us.ihmc.thirdparty.org.opencv/opencv -->
         <dependency>
-            <groupId>opencv</groupId>
+            <groupId>us.ihmc.thirdparty.org.opencv</groupId>
             <artifactId>opencv</artifactId>
-            <version>3.4.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>jfxrt</groupId>
-            <artifactId>jfxrt</artifactId>
-            <version>1.1.0</version>
+            <version>3.2.0-170503</version>
         </dependency>
     </dependencies>
 </project>

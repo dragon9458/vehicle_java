@@ -1,5 +1,6 @@
 package beans;
 
+
 import org.opencv.core.Mat;
 
 public class MatBeans {
