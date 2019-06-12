@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="java" />
+        <module name="vehicle" />
         <module name="vehicle_java" />
       </profile>
     </annotationProcessing>
