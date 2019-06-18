@@ -1,9 +1,7 @@
-package vehicleMain;
-
 import beans.Parameters;
 
 
-public class VehicleMain {
+public class OpencvMain {
 	
 	public static void main(String args[]) {
 		startVehicle();

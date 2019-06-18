@@ -1,19 +1,16 @@
 package cameraCatch;
 
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-
-import java.awt.*;
-import java.awt.image.BufferedImage;
+import imageProcess.ImageProcess;
+import jFrameBeans.MyJframe;
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.videoio.VideoCapture;
 import org.opencv.videoio.Videoio;
 
-import common.Constants;
-import imageProcess.ImageProcess;
-import jFrameBeans.MyJframe;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 
 public class CaptureBasic extends JPanel {
     private static final long serialVersionUID = 1L;
@@ -45,10 +42,11 @@ public class CaptureBasic extends JPanel {
             int height = (int) capture.get(Videoio.CAP_PROP_FRAME_HEIGHT);
             int width = (int) capture.get(Videoio.CAP_PROP_FRAME_WIDTH);
             //异常判定
+            /*
             if (height == 0 || width == 0) {
                 throw new Exception("camera not found!");
             }
-
+*/
             //MyJframe jframe = MyJframe.getInstance();
             MyJframe myJframe = new MyJframe();
 			/*
