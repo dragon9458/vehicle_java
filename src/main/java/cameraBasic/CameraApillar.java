@@ -8,7 +8,6 @@ import org.bytedeco.javacv.Frame;
 import org.bytedeco.javacv.FrameGrabber.Exception;
 import org.bytedeco.javacv.OpenCVFrameGrabber;
 
-import javax.swing.*;
 import java.util.Date;
 
 public class CameraApillar implements Runnable{
@@ -69,7 +68,6 @@ public class CameraApillar implements Runnable{
     public void run() {
         System.out.println("loading camera    " + cameraNum + "    named    " + cameraName + "!!is running");
         this.vedioShow();
-
     }
 
 }

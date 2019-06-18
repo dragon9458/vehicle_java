@@ -27,5 +27,11 @@
             <artifactId>opencv-platform</artifactId>
             <version>3.4.1-1.4.1</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacv</artifactId>
+            <version>1.4.1</version>
+        </dependency>
     </dependencies>
 </project>

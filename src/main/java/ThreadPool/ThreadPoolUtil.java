@@ -14,14 +14,14 @@ public class ThreadPoolUtil {
         ExecutorService executorService = Executors.newFixedThreadPool(4);
 
 
-        executorService.execute(new CameraApillar(Constants.ONE, Constants.CAMERA_RIGHT_A));
+        executorService.execute(new CameraApillar(Constants.TWO, Constants.CAMERA_RIGHT_A));
         sleep();
-        executorService.execute(new CameraApillar(Constants.TWO, Constants.CAMERA_LEFT_A));
+        executorService.execute(new CameraApillar(Constants.ZERO, Constants.CAMERA_LEFT_A));
 
         sleep();
-        executorService.execute(new CameraBinocular(Constants.THREE, Constants.CAMERA_RIGHT_E));
+        executorService.execute(new CameraBinocular(Constants.ONE, Constants.CAMERA_RIGHT_E));
         sleep();
-        executorService.execute(new CameraBinocular(Constants.ZERO, Constants.CAMERA_LEFT_E));
+        executorService.execute(new CameraBinocular(Constants.THREE, Constants.CAMERA_LEFT_E));
         sleep();
 
 
