@@ -2,7 +2,7 @@ package cameraBasic;
 
 import Singleton.SingletonMethodHolder;
 import Utils.ApillarVedioUtils;
-import org.bytedeco.javacpp.opencv_core.Mat;
+import org.bytedeco.javacv.CanvasFrame;
 import org.bytedeco.javacv.CanvasFrame;
 import org.bytedeco.javacv.Frame;
 import org.bytedeco.javacv.FrameGrabber.Exception;
