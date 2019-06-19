@@ -1,4 +1,4 @@
-package common;
+package Params;
 
 import java.io.*;
 import java.util.HashMap;
@@ -58,15 +58,15 @@ public class PropertiesLoader implements Serializable {
 	// 加载配置的配置文件
 	public PropertiesLoader() {
 		try {
-/*
+
 			InputStream is = PropertiesLoader.class.getClassLoader().getResourceAsStream("/conf/vehicle.properties");
 			props.load(is);
-/**/
-			InputStream inputStream = new BufferedInputStream(new FileInputStream(new File("conf/vehicle.properties"))); //方法1
+/*
+			InputStream inputStream = new BufferedInputStream(new FileInputStream(new File("vehicle.properties"))); //方法1
 			//InputStream inputStream = Thread.currentThread().getContextClassLoader().getResourceAsStream("jdbc.properties"); //方法2
 
 			props.load(new InputStreamReader(inputStream, "UTF-8")); //加载格式化后的流
-
+*/
 	} catch (IOException e) {
 			e.printStackTrace();
 			throw new RuntimeException("读取配置文件失败！");

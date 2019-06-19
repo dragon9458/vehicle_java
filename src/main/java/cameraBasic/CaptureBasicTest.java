@@ -1,4 +1,4 @@
-package cameraCatch;
+package cameraBasic;
 
 
 import imageProcess.ImageProcess;
@@ -19,9 +19,44 @@ public class CaptureBasic extends JPanel {
      * BufferedImage生成的图片在内存里有一个图像缓冲区，利用这个缓冲区我们可以很方便的操作这个图片，通常用来做图片修改操作如大小变换、图片变灰、设置图片透明或不透明等。
      * Java将一副图片加载到内存中的方法是：BufferedImage bufferedImage = ImageIO.read(new FileInputStream(filePath));
      */
-    private BufferedImage mImg;
 
     public static void main(String[] args) {
+        cameraBasic(0);
+    }
+
+    public static void cameraBasic(int num){
+
+        System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+        Mat frame = new Mat();
+        Mat rotFrame = new Mat();
+        Mat perspectiveMat = new Mat();
+        Mat rotFrameShow = new Mat();
+
+        VideoCapture capture = new VideoCapture(num);
+        MyJframe myJframe = new MyJframe();
+        CaptureBasic panel = new CaptureBasic();
+
+        myJframe.setContentPane(panel);
+        while (myJframe.isShowing()) {
+
+            capture.read(frame);
+
+            //图像处理
+            rotFrameShow = ImageProcess.imageProcess(frame,rotFrame,perspectiveMat);
+            rotFrameShow = frame;
+            myJframe.setSize(rotFrameShow.rows(),rotFrameShow.rows());
+            //处理摄像头获取mat
+            panel.mImg = panel.mat2BI(rotFrameShow);
+
+            panel.repaint();
+        }
+    }
+
+
+
+    private BufferedImage mImg;
+
+    public static void cameraBasicOld(){
         try {
             /**
              * 加载由LabNAMEARGUDEN指定的本机库。
@@ -88,6 +123,8 @@ public class CaptureBasic extends JPanel {
             System.out.println("--done--");
         }
     }
+
+
 
     /**
      *
