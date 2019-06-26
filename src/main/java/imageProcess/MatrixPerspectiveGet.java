@@ -2,18 +2,14 @@ package imageProcess;
 
 import java.util.List;
 
-import org.omg.Dynamic.Parameter;
 import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.Point;
-import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.utils.Converters;
 
-import beans.MatBeans;
-import beans.Parameters;
-import common.Constants;
+import Params.Parameters;
 
 /*
  * srcPoint[0] = Point2f( 0,0 );			//左上
@@ -35,7 +31,7 @@ public class MatrixPerspectiveGet {
 			System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 			
 			// get  perspective matrix 
-			List<Point> listSrcs=java.util.Arrays.asList(new Point(1,1),new Point(959,1),new Point(1,1279),new Point(959,1279));
+			List<Point> listSrcs=java.util.Arrays.asList(new Point(param.getP1x(),param.getP1y()),new Point(param.getP2x(),param.getP2y()),new Point(param.getP3x(),param.getP3y()),new Point(param.getP4x(),param.getP4y()));
 			src = Converters.vector_Point_to_Mat(listSrcs,CvType.CV_32F);
 			
 			List<Point> listDsts=java.util.Arrays.asList(new Point(param.getP1x(),param.getP1y()),new Point(param.getP2x(),param.getP2y()),new Point(param.getP3x(),param.getP3y()),new Point(param.getP4x(),param.getP4y()));
