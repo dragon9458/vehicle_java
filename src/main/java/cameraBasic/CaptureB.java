@@ -17,7 +17,6 @@ import org.opencv.core.Point;
 import org.opencv.core.Rect;
 import org.opencv.core.Scalar;
 import org.opencv.imgproc.Imgproc;
-import org.opencv.ml.SVM;
 import org.opencv.objdetect.CascadeClassifier;
 import org.opencv.objdetect.HOGDescriptor;
 import org.opencv.videoio.VideoCapture;
@@ -58,7 +57,7 @@ public class CaptureB extends JPanel {
             System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 
             Mat capImg=new Mat();
-            VideoCapture capture=new VideoCapture(0);
+            VideoCapture capture=new VideoCapture(1);
             int height = (int)capture.get(Videoio.CAP_PROP_FRAME_HEIGHT);
             int width = (int)capture.get(Videoio.CAP_PROP_FRAME_WIDTH);
             if(height==0||width==0){
@@ -68,6 +67,8 @@ public class CaptureB extends JPanel {
             JFrame frame=new JFrame("camera");
             frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
             CaptureB panel=new CaptureB();
+
+            /*
             panel.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent arg0) {
@@ -98,6 +99,7 @@ public class CaptureB extends JPanel {
                 }
 
     });
+    */
             frame.setContentPane(panel);
             frame.setVisible(true);
             frame.setSize(width+frame.getInsets().left+frame.getInsets().right,
@@ -109,7 +111,7 @@ public class CaptureB extends JPanel {
                 capture.read(capImg);
                 Imgproc.cvtColor(capImg, temp, Imgproc.COLOR_RGB2GRAY);
                 //Imgcodecs.imwrite("G:/opencv/lw/neg/back"+n+".png", temp);
-                panel.mImg=panel.mat2BI(detectFace(capImg));
+                panel.mImg=panel.mat2BI(detectPeople(capImg));
                 panel.repaint();
                 //n++;
                 //break;
@@ -132,7 +134,7 @@ public class CaptureB extends JPanel {
 
         System.out.println("Running DetectFace ... ");
         // 从配置文件lbpcascade_frontalface.xml中创建一个人脸识别器，该文件位于opencv安装目录中
-        CascadeClassifier faceDetector = new CascadeClassifier("C:/Users/dragon/Desktop/learning/vehicle_java/conf/haarcascade_frontalface_default.xml");
+        CascadeClassifier faceDetector = new CascadeClassifier("conf/haarcascade_frontalface_default.xml");
 
 
         // 在图片中检测人脸

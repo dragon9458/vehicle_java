@@ -7,12 +7,12 @@ import org.bytedeco.javacv.FrameGrabber.Exception;
 import org.bytedeco.javacv.OpenCVFrameGrabber;
 
 
-public class CameraBinocular implements Runnable{
+public class CameraBin implements Runnable{
 
     private int cameraNum;
     private String cameraName;
 
-    public CameraBinocular(int cameraNum, String cameraName){
+    public CameraBin(int cameraNum, String cameraName){
         this.cameraNum = cameraNum;
         this.cameraName = cameraName;
         System.out.println("loading camera   " + cameraNum + "    named    " + cameraName);

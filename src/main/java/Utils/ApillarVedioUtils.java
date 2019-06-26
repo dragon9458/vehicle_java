@@ -1,11 +1,10 @@
-package opencv.Utils;
+package Utils;
 
-import opencv.Singleton.SingletonMethodHolder;
+import Singleton.SingletonMethodHolder;
 import org.bytedeco.javacpp.opencv_core.Size;
 import org.bytedeco.javacpp.opencv_core.*;
 import org.bytedeco.javacpp.opencv_imgproc;
 import org.bytedeco.javacv.Frame;
-import org.opencv.utils.Converters;
 
 import java.util.List;
 

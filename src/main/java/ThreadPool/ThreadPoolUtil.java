@@ -1,45 +1,58 @@
-package opencv.ThreadPool;
+package ThreadPool;
 
-import opencv.Params.Constants;
-import opencv.Params.ThreadConstants;
-import opencv.cameraBasic.CameraApillar;
-import opencv.cameraBasic.CameraBinocular;
+import Camera.CaptureBinocular;
+import Params.Constants;
+import cameraBasic.CameraAp;
+import cameraBasic.CameraBin;
+
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
 
 public class ThreadPoolUtil {
 
-    public void ThreadPoolStart(){
+    public void JavaCV_ThreadPoolStart(){
         ExecutorService executorService = Executors.newFixedThreadPool(4);
 
 
-        executorService.execute(new CameraApillar(Constants.ZERO, Constants.CAMERA_RIGHT_A));
+        executorService.execute(new CameraAp(Constants.CAMERA_RIGHT_A, Constants.CAMERA_R_A));
         sleep();
-        executorService.execute(new CameraApillar(Constants.TWO, Constants.CAMERA_LEFT_A));
+        executorService.execute(new CameraAp(Constants.CAMERA_LEFT_A, Constants.CAMERA_L_A));
         sleep();
-        executorService.execute(new CameraBinocular(Constants.ONE, Constants.CAMERA_RIGHT_E));
+        executorService.execute(new CameraBin(Constants.CAMERA_RIGHT_E, Constants.CAMERA_R_E));
         sleep();
-        executorService.execute(new CameraBinocular(Constants.THREE, Constants.CAMERA_LEFT_E));
+        executorService.execute(new CameraBin(Constants.CAMERA_LEFT_E, Constants.CAMERA_L_E));
+        sleep();
+    }
+
+    public void OpenCV_ThreadPoolStart(){
+        ExecutorService executorService = Executors.newFixedThreadPool(5);
+
+        executorService.execute(new CaptureBinocular(Constants.CAMERA_RIGHT_E, Constants.CAMERA_R_E));
+        sleep();
+        executorService.execute(new CaptureBinocular(Constants.CAMERA_LEFT_E, Constants.CAMERA_L_E));
         sleep();
 
-
+        executorService.execute(new CameraAp(Constants.CAMERA_RIGHT_A, Constants.CAMERA_R_A));
+        sleep();
+        executorService.execute(new CameraAp(Constants.CAMERA_LEFT_A, Constants.CAMERA_L_A));
+        sleep();
 
     }
 
     public void sleep(){
-        if(ThreadConstants.binocularStatus){
-            try {
-                System.out.println(Thread.activeCount() + "    succeed");
-                Thread.sleep(5000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+        try {
+            Thread.sleep(5000);
+            System.out.println("Waiting!!!");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+
     }
 
     public static void main(String[] args){
-        new ThreadPoolUtil().ThreadPoolStart();
+        //new ThreadPoolUtil().JavaCV_ThreadPoolStart()
+        new ThreadPoolUtil().OpenCV_ThreadPoolStart();
 
     }
 }

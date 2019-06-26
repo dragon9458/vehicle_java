@@ -1,9 +1,9 @@
-package common;
-
-import parameterUtils.PropertiesLoader;
+package Params;
 
 public class Constants {
 	private static PropertiesLoader pl = new PropertiesLoader();
+
+	public static boolean CameraFlag = true;
 	//目标顶点 x坐标
 	public static int p1x = pl.getInteger("p1x");
 	public static int p2x = pl.getInteger("p2x");
@@ -25,24 +25,22 @@ public class Constants {
 	//窗口名称
 	public static String JFRAME_NAME = pl.getString("JFRAME_NAME");
 
+	//長寬
+	public static int BINOCULAR_H = pl.getInteger("BINOCULAR_H");
+	public static int BINOCULAR_W = pl.getInteger("BINOCULAR_W");
 
+	public static int CAMERA_RIGHT_A = pl.getInteger("CAMERA_RIGHT_A");
+	public static int CAMERA_LEFT_A = pl.getInteger("CAMERA_LEFT_A");
+	public static int CAMERA_RIGHT_E = pl.getInteger("CAMERA_RIGHT_E");
+	public static int CAMERA_LEFT_E = pl.getInteger("CAMERA_LEFT_E");
 
-	int ZERO = 0;
-	int ONE = 1;
-	int TWO = 2;
-	int THREE = 3;
-	int FOUR = 4;
-	String CAMERA_LEFT_A = "CAMERA_LEFT_A";
-	String CAMERA_RIGHT_A = "CAMERA_RIGHT_A";
-	String CAMERA_LEFT_E = "CAMERA_LEFT_E";
-	String CAMERA_RIGHT_E = "CAMERA_RIGHT_E";
+	public static String CAMERA_L_A = "CAMERA_L_A";
+	public static String CAMERA_R_A = "CAMERA_R_A";
+	public static String CAMERA_L_E = "CAMERA_L_E";
+	public static String CAMERA_R_E = "CAMERA_R_E";
 
 	int APILLAR_WIDTH = 720;
 	int APILLAR_HIGHT = 1280;
-
-	int BINOCULAR_W = 640;
-	int BINOCULAR_H = 240;
-
 
 	long LONG_ONE = 120;
 	long LONG_TWO = 160;

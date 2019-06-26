@@ -1,7 +1,10 @@
 package cameraBasic;
 
 
-import imageProcess.ImageProcess;
+import imageProcess.ApillarImageProcess;
+import imageProcess.BodyProcess;
+import imageProcess.EyeProcess;
+import imageProcess.FaceProcess;
 import jFrameBeans.MyJframe;
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
@@ -12,7 +15,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-public class CaptureBasic extends JPanel {
+public class CaptureBasicTest extends JPanel {
     private static final long serialVersionUID = 1L;
     /**
      * BufferedImage是Image的一个子类，Image和BufferedImage的主要作用就是将一副图片加载到内存中。
@@ -21,7 +24,7 @@ public class CaptureBasic extends JPanel {
      */
 
     public static void main(String[] args) {
-        cameraBasic(0);
+        cameraBasic(1);
     }
 
     public static void cameraBasic(int num){
@@ -34,22 +37,32 @@ public class CaptureBasic extends JPanel {
 
         VideoCapture capture = new VideoCapture(num);
         MyJframe myJframe = new MyJframe();
-        CaptureBasic panel = new CaptureBasic();
+        CaptureBasicTest panel = new CaptureBasicTest();
 
         myJframe.setContentPane(panel);
-        while (myJframe.isShowing()) {
+        try{
+            while(myJframe.isShowing()) {
 
-            capture.read(frame);
+                capture.read(frame);
 
-            //图像处理
-            rotFrameShow = ImageProcess.imageProcess(frame,rotFrame,perspectiveMat);
-            rotFrameShow = frame;
-            myJframe.setSize(rotFrameShow.rows(),rotFrameShow.rows());
-            //处理摄像头获取mat
-            panel.mImg = panel.mat2BI(rotFrameShow);
+                //图像处理
+                //rotFrameShow = ApillarImageProcess.imageProcess(frame,rotFrame,perspectiveMat);
 
-            panel.repaint();
+                rotFrameShow = frame;
+                rotFrameShow = FaceProcess.detectFace(rotFrameShow);
+                rotFrameShow = EyeProcess.detectEye(rotFrameShow);
+
+                myJframe.setSize(rotFrameShow.rows(),rotFrameShow.rows());
+                //处理摄像头获取mat
+                panel.mImg = panel.mat2BI(rotFrameShow);
+
+                panel.repaint();
+            }
+        }catch (Exception e){
+            e.printStackTrace();
         }
+
+
     }
 
 
@@ -88,7 +101,8 @@ public class CaptureBasic extends JPanel {
 			myJframe.setSize(width + myJframe.getInsets().left + myJframe.getInsets().right,
 					height + myJframe.getInsets().top + myJframe.getInsets().bottom);
 			*/
-            CaptureBasic panel = new CaptureBasic();
+
+            CaptureBasicTest panel = new CaptureBasicTest();
             /**
              * 设置CurrtPANE属性。此方法由构造函数调用。
              * Swing的绘画体系结构需要一个不透明的JCultEnin包容层次结构。这通常由内容窗格提供。
@@ -103,7 +117,7 @@ public class CaptureBasic extends JPanel {
                 capture.read(frame);
 
                 //图像处理
-                rotFrameShow= ImageProcess.imageProcess(frame,rotFrame,perspectiveMat);
+                rotFrameShow= ApillarImageProcess.apillarImageProcess(frame,rotFrame,perspectiveMat);
 
                 myJframe.setSize(rotFrameShow.rows(),rotFrameShow.rows());
                 //处理摄像头获取mat

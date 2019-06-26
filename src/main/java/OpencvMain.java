@@ -1,4 +1,4 @@
-import beans.Parameters;
+import Params.Parameters;
 
 
 public class OpencvMain {

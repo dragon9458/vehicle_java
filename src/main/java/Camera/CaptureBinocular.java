@@ -1,6 +1,7 @@
 package Camera;
 
 
+import Params.Constants;
 import imageProcess.ApillarImageProcess;
 import imageProcess.EyeProcess;
 import imageProcess.FaceProcess;
@@ -14,44 +15,47 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-public class CaptureB extends JPanel {
+public class CaptureBinocular extends JPanel implements Runnable{
     private static final long serialVersionUID = 1L;
-    /**
-     * BufferedImage是Image的一个子类，Image和BufferedImage的主要作用就是将一副图片加载到内存中。
-     * BufferedImage生成的图片在内存里有一个图像缓冲区，利用这个缓冲区我们可以很方便的操作这个图片，通常用来做图片修改操作如大小变换、图片变灰、设置图片透明或不透明等。
-     * Java将一副图片加载到内存中的方法是：BufferedImage bufferedImage = ImageIO.read(new FileInputStream(filePath));
-     */
+    int cameraNum;
+    String cameraName;
 
-    public static void main(String[] args) {
-        cameraBasic(1);
+    public CaptureBinocular(){
+    }
+    public CaptureBinocular(int cameraNum, String cameraName){
+        this.cameraNum = cameraNum;
+        this.cameraName = cameraName;
     }
 
-    public static void cameraBasic(int num){
+    public static void main(String[] args) {
+        new CaptureBinocular(1,"localTest").cameraBasic();
+    }
+
+    public void cameraBasic(){
 
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
         Mat frame = new Mat();
-        Mat rotFrame = new Mat();
-        Mat perspectiveMat = new Mat();
-        Mat rotFrameShow = new Mat();
+        Mat rotFrameShow;
 
-        VideoCapture capture = new VideoCapture(num);
+        VideoCapture capture = new VideoCapture(cameraNum);
         MyJframe myJframe = new MyJframe();
-        CaptureB panel = new CaptureB();
-
+        CaptureBinocular panel = new CaptureBinocular();
         myJframe.setContentPane(panel);
+        //视频比例
+        int height = (int) capture.get(Videoio.CAP_PROP_FRAME_HEIGHT);
+        int width = (int) capture.get(Videoio.CAP_PROP_FRAME_WIDTH);
+
         try{
             while(myJframe.isShowing()) {
 
                 capture.read(frame);
 
-                //图像处理
-                //rotFrameShow = ApillarImageProcess.imageProcess(frame,rotFrame,perspectiveMat);
-
                 rotFrameShow = frame;
                 rotFrameShow = FaceProcess.detectFace(rotFrameShow);
                 rotFrameShow = EyeProcess.detectEye(rotFrameShow);
 
-                myJframe.setSize(rotFrameShow.rows(),rotFrameShow.rows());
+
+                myJframe.setSize(rotFrameShow.width(),rotFrameShow.rows());
                 //处理摄像头获取mat
                 panel.mImg = panel.mat2BI(rotFrameShow);
 
@@ -65,8 +69,6 @@ public class CaptureB extends JPanel {
     }
 
 
-
-    private BufferedImage mImg;
 
     public static void cameraBasicOld(){
         try {
@@ -101,7 +103,7 @@ public class CaptureB extends JPanel {
 					height + myJframe.getInsets().top + myJframe.getInsets().bottom);
 			*/
 
-            CaptureB panel = new CaptureB();
+            CaptureBinocular panel = new CaptureBinocular();
             /**
              * 设置CurrtPANE属性。此方法由构造函数调用。
              * Swing的绘画体系结构需要一个不透明的JCultEnin包容层次结构。这通常由内容窗格提供。
@@ -116,7 +118,7 @@ public class CaptureB extends JPanel {
                 capture.read(frame);
 
                 //图像处理
-                rotFrameShow= ApillarImageProcess.imageProcess(frame,rotFrame,perspectiveMat);
+                //rotFrameShow= ApillarImageProcess.imageProcess(frame,rotFrame,perspectiveMat);
 
                 myJframe.setSize(rotFrameShow.rows(),rotFrameShow.rows());
                 //处理摄像头获取mat
@@ -144,22 +146,11 @@ public class CaptureB extends JPanel {
      * @param mat
      * @return
      */
+    private BufferedImage mImg;
     private BufferedImage mat2BI(Mat mat) {
         int dataSize = mat.cols() * mat.rows() * (int) mat.elemSize();
         byte[] data = new byte[dataSize];
         mat.get(0, 0, data);
-        /**
-         * TYPE_3BYTE_BGR：
-         * 表示一个具有 8 位 rgb 颜色分量的图像，对应于 windows 风格的 bgr 颜色模型，具有用 3 字节存储的 blue、green 和 red 三种颜色。
-         * 不存在 alpha。该图像具有一个 componentcolormodel。
-         * 当具有透明 alpha 的数据存储在此类型的图像中时，必须将颜色数据调整为非预乘形式并丢弃 alpha，如 alphacomposite 文档中的描述。
-         */
-        /**
-         * TYPE_BYTE_GRAY：
-         * 表示无索引的灰度级图像，无索引。这个图像有一个带有CSHGRY的<代码>组件颜色模型< /代码>{@链接颜色空间}。
-         * 当存储有非不透明α的数据时在这种类型的图像中，颜色数据必须调整为非预乘形式。
-         * 阿尔法被抛弃，正如在{@链接java. AWT.AlpAccoPosiTe}文档。
-         */
         int type = mat.channels() == 1 ? BufferedImage.TYPE_BYTE_GRAY : BufferedImage.TYPE_3BYTE_BGR;
         if (type == BufferedImage.TYPE_3BYTE_BGR) {
             for (int i = 0; i < dataSize; i += 3) {
@@ -181,6 +172,10 @@ public class CaptureB extends JPanel {
         if (mImg != null) {
             g.drawImage(mImg, 0, 0, mImg.getWidth(), mImg.getHeight(), this);
         }
+
     }
 
+    public void run() {
+        new CaptureBinocular(Constants.CAMERA_LEFT_A,Constants.CAMERA_L_A);
+    }
 }

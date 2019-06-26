@@ -4,12 +4,12 @@ import org.opencv.core.Mat;
 import org.opencv.core.Size;
 import org.opencv.imgproc.Imgproc;
 
-public class ImageProcess {
+public class ApillarImageProcess {
 	
 	/**
 	 * perspective change and image cut
 	 */
-	public static Mat imageProcess(Mat frame,Mat rotFrame,Mat perspectiveMat) {
+	public static Mat apillarImageProcess(Mat frame,Mat rotFrame,Mat perspectiveMat) {
 		//获取 透视变换矩阵				
 		perspectiveMat = MatrixPerspectiveGet.getPerspectiveMatrix(perspectiveMat);
 		
