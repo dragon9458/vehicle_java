@@ -1,7 +1,45 @@
 package Params;
 
+import java.io.*;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Properties;
+
 public class Constants {
 	private static PropertiesLoader pl = new PropertiesLoader();
+
+	public static HashMap<String, String> paramsHash = getParamsHash();
+
+	public static HashMap<String, String> getParamsHash(){
+		return PropertiesLoader.paramsHash;
+	}
+
+	//加载配置文件 为hash注入值
+	/*
+	public static HashMap<String, String> getParams() {
+		HashMap<String, String> hashMap = new HashMap<String, String>();
+		Properties props = new Properties();
+		try {
+			InputStream inputStream = new BufferedInputStream(new FileInputStream(new File("conf/vehicle.properties"))); //方法1
+			props.load(new InputStreamReader(inputStream, "UTF-8")); //加载格式化后的流
+			Iterator<String> it = props.stringPropertyNames().iterator();
+			while(it.hasNext()){
+				String key=it.next();
+				hashMap.put(key,props.getProperty(key));
+				System.out.println(key+":" + props.getProperty(key));
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+			throw new RuntimeException("读取配置文件失败！");
+		}
+		return hashMap;
+	}
+	*/
+
+	public static void setInteger(String key, Integer value){
+		String str = String.valueOf(value);
+		pl.setString(key,str);
+	}
 
 	public static boolean CameraFlag = true;
 	//目标顶点 x坐标
@@ -25,7 +63,7 @@ public class Constants {
 	//窗口名称
 	public static String JFRAME_NAME = pl.getString("JFRAME_NAME");
 
-	//長寬
+	//图像长宽
 	public static int BINOCULAR_H = pl.getInteger("BINOCULAR_H");
 	public static int BINOCULAR_W = pl.getInteger("BINOCULAR_W");
 
@@ -38,6 +76,15 @@ public class Constants {
 	public static String CAMERA_R_A = "CAMERA_R_A";
 	public static String CAMERA_L_E = "CAMERA_L_E";
 	public static String CAMERA_R_E = "CAMERA_R_E";
+
+	//人眼坐标
+	public static int LEFT_EYE_X = pl.getInteger("LEFT_EYE_X");
+	public static int LEFT_EYE_Y = pl.getInteger("LEFT_EYE_Y");
+	public static int RIGHT_EYE_X = pl.getInteger("RIGHT_EYE_X");
+	public static int RIGHT_EYE_Y = pl.getInteger("RIGHT_EYE_Y");
+
+	public static int EYE_X = pl.getInteger("EYE_X");
+	public static int EYE_Y = pl.getInteger("EYE_Y");
 
 	int APILLAR_WIDTH = 720;
 	int APILLAR_HIGHT = 1280;

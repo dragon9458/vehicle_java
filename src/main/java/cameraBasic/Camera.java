@@ -31,7 +31,7 @@ public class Camera {
         }
         return dst;
     }
-
+/*
     public static void read_csv(final String filename, List<Mat> images, List<Integer> labels, char separator) throws Exception {
         if (filename.isEmpty()) {
             throw new Exception("没有提供有效的输入文件, 请检查给定的文件名");
@@ -39,7 +39,7 @@ public class Camera {
         String line, path, classLabel;
         //while()
     }
-
+*/
     public static void detectHumenFrontFace(Mat rgb, Mat gray) {
         CascadeClassifier cascade = new CascadeClassifier("conf/haarcascade_frontalface_default.xml");
         if (cascade.empty()) {
@@ -59,7 +59,7 @@ public class Camera {
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 
         VideoCapture videoCapture = new VideoCapture();
-        if (!videoCapture.open(0)) {
+        if (!videoCapture.open(1)) {
             System.out.println("相机打开失败");
             return;
         }
@@ -73,7 +73,7 @@ public class Camera {
             Mat gray = new Mat();
             Imgproc.cvtColor(rgb, gray, Imgproc.COLOR_RGB2GRAY);
             detectHumenFrontFace(img, gray);
-            HighGui.waitKey(10);
+            HighGui.waitKey(1);
         }
     }
 }

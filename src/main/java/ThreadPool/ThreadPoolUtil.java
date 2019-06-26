@@ -32,12 +32,12 @@ public class ThreadPoolUtil {
         sleep();
         executorService.execute(new CaptureBinocular(Constants.CAMERA_LEFT_E, Constants.CAMERA_L_E));
         sleep();
-
+/*
         executorService.execute(new CameraAp(Constants.CAMERA_RIGHT_A, Constants.CAMERA_R_A));
         sleep();
         executorService.execute(new CameraAp(Constants.CAMERA_LEFT_A, Constants.CAMERA_L_A));
         sleep();
-
+*/
     }
 
     public void sleep(){

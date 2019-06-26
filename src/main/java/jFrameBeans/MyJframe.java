@@ -12,7 +12,7 @@ public class MyJframe extends JFrame{
 	public MyJframe() {
 		this.pack();
 
-		this.setTitle(Constants.JFRAME_NAME);
+		this.setTitle("A");
 
 		this.setVisible(true);
 		

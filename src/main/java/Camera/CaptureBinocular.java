@@ -2,7 +2,7 @@ package Camera;
 
 
 import Params.Constants;
-import imageProcess.ApillarImageProcess;
+import Params.PropertiesLoader;
 import imageProcess.EyeProcess;
 import imageProcess.FaceProcess;
 import jFrameBeans.MyJframe;
@@ -28,6 +28,7 @@ public class CaptureBinocular extends JPanel implements Runnable{
     }
 
     public static void main(String[] args) {
+        new PropertiesLoader();
         new CaptureBinocular(1,"localTest").cameraBasic();
     }
 
@@ -50,10 +51,7 @@ public class CaptureBinocular extends JPanel implements Runnable{
 
                 capture.read(frame);
 
-                rotFrameShow = frame;
-                rotFrameShow = FaceProcess.detectFace(rotFrameShow);
-                rotFrameShow = EyeProcess.detectEye(rotFrameShow);
-
+                rotFrameShow = EyeProcess.detectEye(FaceProcess.detectFace(frame));
 
                 myJframe.setSize(rotFrameShow.width(),rotFrameShow.rows());
                 //处理摄像头获取mat
@@ -67,79 +65,6 @@ public class CaptureBinocular extends JPanel implements Runnable{
 
 
     }
-
-
-
-    public static void cameraBasicOld(){
-        try {
-            /**
-             * 加载由LabNAMEARGUDEN指定的本机库。
-             * LabNAMEARGUDEN参数必须不包含任何特定于平台的前缀、文件扩展名或路径。
-             * 如果称为libname的本地库与VM静态链接，则调用库导出的JNI_OnLoad_libname函数。
-             * 有关详细信息，请参阅JNI规范。依赖依赖的方式。
-             */
-            System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
-            Mat frame = new Mat();
-            Mat rotFrame = new Mat();
-            Mat perspectiveMat = new Mat();
-            Mat rotFrameShow = new Mat();
-
-            //Mat capImg = new Mat();
-            //开启第一个摄像头
-            VideoCapture capture = new VideoCapture(0);
-            //视频比例
-            int height = (int) capture.get(Videoio.CAP_PROP_FRAME_HEIGHT);
-            int width = (int) capture.get(Videoio.CAP_PROP_FRAME_WIDTH);
-            //异常判定
-            /*
-            if (height == 0 || width == 0) {
-                throw new Exception("camera not found!");
-            }
-*/
-            //MyJframe jframe = MyJframe.getInstance();
-            MyJframe myJframe = new MyJframe();
-			/*
-			myJframe.setSize(width + myJframe.getInsets().left + myJframe.getInsets().right,
-					height + myJframe.getInsets().top + myJframe.getInsets().bottom);
-			*/
-
-            CaptureBinocular panel = new CaptureBinocular();
-            /**
-             * 设置CurrtPANE属性。此方法由构造函数调用。
-             * Swing的绘画体系结构需要一个不透明的JCultEnin包容层次结构。这通常由内容窗格提供。
-             * 如果替换内容窗格，建议使用不透明的JCube替换内容窗格。
-             */
-            myJframe.setContentPane(panel);
-            //动态显示设置内容后显示，字面翻译
-
-            while (myJframe.isShowing()) {
-
-                //摄像头读取内容
-                capture.read(frame);
-
-                //图像处理
-                //rotFrameShow= ApillarImageProcess.imageProcess(frame,rotFrame,perspectiveMat);
-
-                myJframe.setSize(rotFrameShow.rows(),rotFrameShow.rows());
-                //处理摄像头获取mat
-                panel.mImg = panel.mat2BI(rotFrameShow);
-                /**
-                 * 重新绘制此组件。
-                 * 如果此组件是轻量级组件，则该方法将尽快调用该组件的PruttMead方法。
-                 * 否则，该方法会导致对该组件的更新方法的调用成为可能。
-                 */
-                panel.repaint();
-            }
-            capture.release();
-            myJframe.dispose();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            System.out.println("--done--");
-        }
-    }
-
-
 
     /**
      *

@@ -1,10 +1,7 @@
 package Params;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
+import java.util.*;
 
 public class PropertiesLoader implements Serializable {
 
@@ -12,9 +9,10 @@ public class PropertiesLoader implements Serializable {
 
 	private Properties props = new Properties();
 
+	public static HashMap<String, String> paramsHash = new HashMap<String, String>();
+
 	public static void main(String args[]) {
-		String aa = new PropertiesLoader().getString("OP_NAME");
-		System.out.println(aa);
+		new PropertiesLoader();
 	}
 
 	public String getLocalPath() {
@@ -38,6 +36,7 @@ public class PropertiesLoader implements Serializable {
 		String string = props.getProperty(str);
 		return Integer.valueOf(string);
 	}
+
 	public void setString(String key, String value) {
 		props.setProperty(key, value);
 	}
@@ -61,18 +60,27 @@ public class PropertiesLoader implements Serializable {
 /*
 			InputStream is = PropertiesLoader.class.getClassLoader().getResourceAsStream("/conf/vehicle.properties");
 			props.load(is);
-/**/
+*/
 			InputStream inputStream = new BufferedInputStream(new FileInputStream(new File("conf/vehicle.properties"))); //方法1
-			//InputStream inputStream = Thread.currentThread().getContextClassLoader().getResourceAsStream("jdbc.properties"); //方法2
-
 			props.load(new InputStreamReader(inputStream, "UTF-8")); //加载格式化后的流
 
+			Iterator<String> it = props.stringPropertyNames().iterator();
+			while (it.hasNext()) {
+				String key = it.next();
+				String value = props.getProperty(key);
+				paramsHash.put(key, value);
+				System.out.println(key + ":" + props.getProperty(key));
+			}
+/*
+			///保存属性到b.properties文件
+			FileOutputStream oFile = new FileOutputStream("conf/vehicle.properties", true);//true表示追加打开
+			props.setProperty("phone", "10086333");
+			props.store(oFile, "The New properties file");
+			oFile.close();
+*/
 		} catch (IOException e) {
 			e.printStackTrace();
 			throw new RuntimeException("读取配置文件失败！");
 		}
 	}
-
-
-
 }
