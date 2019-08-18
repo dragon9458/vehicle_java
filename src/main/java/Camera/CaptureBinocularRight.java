@@ -3,6 +3,7 @@ package Camera;
 
 import Params.Constants;
 import Params.PropertiesLoader;
+import imageProcess.BinocularImageProcess;
 import imageProcess.EyeProcess;
 import imageProcess.FaceProcess;
 import jFrameBeans.MyJframe;
@@ -15,21 +16,22 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-public class CaptureBinocular extends JPanel implements Runnable{
+public class CaptureBinocularRight extends JPanel implements Runnable{
     private static final long serialVersionUID = 1L;
     int cameraNum;
     String cameraName;
+    CaptureBinocularRight panel;
 
-    public CaptureBinocular(){
+    public CaptureBinocularRight(){
     }
-    public CaptureBinocular(int cameraNum, String cameraName){
+    public CaptureBinocularRight(int cameraNum, String cameraName){
         this.cameraNum = cameraNum;
         this.cameraName = cameraName;
+        panel = this;
     }
 
     public static void main(String[] args) {
-        new PropertiesLoader();
-        new CaptureBinocular(1,"localTest").cameraBasic();
+        new CaptureBinocularRight(1,"localTest").cameraBasic();
     }
 
     public void cameraBasic(){
@@ -40,7 +42,6 @@ public class CaptureBinocular extends JPanel implements Runnable{
 
         VideoCapture capture = new VideoCapture(cameraNum);
         MyJframe myJframe = new MyJframe();
-        CaptureBinocular panel = new CaptureBinocular();
         myJframe.setContentPane(panel);
         //视频比例
         int height = (int) capture.get(Videoio.CAP_PROP_FRAME_HEIGHT);
@@ -48,15 +49,13 @@ public class CaptureBinocular extends JPanel implements Runnable{
 
         try{
             while(myJframe.isShowing()) {
-
                 capture.read(frame);
 
-                rotFrameShow = EyeProcess.detectEye(FaceProcess.detectFace(frame));
+                rotFrameShow = BinocularImageProcess.binocularImageProcess(frame, Constants.paramsHashRight);
 
                 myJframe.setSize(rotFrameShow.width(),rotFrameShow.rows());
                 //处理摄像头获取mat
                 panel.mImg = panel.mat2BI(rotFrameShow);
-
                 panel.repaint();
             }
         }catch (Exception e){
@@ -101,6 +100,6 @@ public class CaptureBinocular extends JPanel implements Runnable{
     }
 
     public void run() {
-        new CaptureBinocular(Constants.CAMERA_LEFT_A,Constants.CAMERA_L_A);
+       this.cameraBasic();
     }
 }

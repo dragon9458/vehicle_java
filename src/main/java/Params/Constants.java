@@ -1,40 +1,19 @@
 package Params;
 
-import java.io.*;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Properties;
 
 public class Constants {
 	private static PropertiesLoader pl = new PropertiesLoader();
 
 	public static HashMap<String, String> paramsHash = getParamsHash();
 
+	public static HashMap<String, String> paramsHashLeft = getParamsHash();
+
+	public static HashMap<String, String> paramsHashRight = getParamsHash();
+
 	public static HashMap<String, String> getParamsHash(){
 		return PropertiesLoader.paramsHash;
 	}
-
-	//加载配置文件 为hash注入值
-	/*
-	public static HashMap<String, String> getParams() {
-		HashMap<String, String> hashMap = new HashMap<String, String>();
-		Properties props = new Properties();
-		try {
-			InputStream inputStream = new BufferedInputStream(new FileInputStream(new File("conf/vehicle.properties"))); //方法1
-			props.load(new InputStreamReader(inputStream, "UTF-8")); //加载格式化后的流
-			Iterator<String> it = props.stringPropertyNames().iterator();
-			while(it.hasNext()){
-				String key=it.next();
-				hashMap.put(key,props.getProperty(key));
-				System.out.println(key+":" + props.getProperty(key));
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-			throw new RuntimeException("读取配置文件失败！");
-		}
-		return hashMap;
-	}
-	*/
 
 	public static void setInteger(String key, Integer value){
 		String str = String.valueOf(value);

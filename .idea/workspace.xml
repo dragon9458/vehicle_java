@@ -5,74 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a96298a-cc0d-4224-8932-1a3e69791a4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/conf/doubleCameraCalib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left09.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left26.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left27.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/left28.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right07.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right09.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right26.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right27.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/image/right28.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Camera/DoubleCameraCalib.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/haarcascade_eye_copy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Camera/CaptureBinocularRight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/vehicle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/conf/vehicle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/vehicle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/conf/vehicle.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Camera/CaptureBinocular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Camera/CaptureBinocular.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Camera/CaptureBinocular.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Camera/CaptureBinocularLeft.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Params/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Params/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Params/PropertiesLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Params/PropertiesLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ThreadPool/ThreadPoolUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ThreadPool/ThreadPoolUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cameraBasic/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cameraBasic/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imageProcess/BinocularImageProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imageProcess/BinocularImageProcess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/imageProcess/EyeProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imageProcess/EyeProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/imageProcess/FaceProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/imageProcess/FaceProcess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jFrameBeans/MyJframe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jFrameBeans/MyJframe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jFrameBeans/MyJframe.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jFrameBeans/MyJframe.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -97,52 +42,54 @@
     <session id="1949641750">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="11" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="195" />
-          <entry key="properties" value="6" />
-          <entry key="txt" value="2" />
-          <entry key="xml" value="8" />
+          <entry key="java" value="224" />
+          <entry key="properties" value="8" />
+          <entry key="txt" value="3" />
+          <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="11" />
-          <entry key="JAVA" value="194" />
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Properties" value="6" />
-          <entry key="XML" value="8" />
+          <entry key="JAVA" value="223" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="Properties" value="8" />
+          <entry key="XML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="class" value="5" />
-          <entry key="dummy" value="58" />
+          <entry key="dummy" value="77" />
           <entry key="gitignore" value="9" />
-          <entry key="java" value="3357" />
-          <entry key="properties" value="121" />
+          <entry key="java" value="7647" />
+          <entry key="properties" value="124" />
           <entry key="xml" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="5" />
-          <entry key="JAVA" value="3357" />
-          <entry key="PLAIN_TEXT" value="67" />
-          <entry key="Properties" value="121" />
+          <entry key="JAVA" value="7647" />
+          <entry key="PLAIN_TEXT" value="86" />
+          <entry key="Properties" value="124" />
           <entry key="XML" value="19" />
         </counts>
       </usages-collector>
@@ -192,10 +139,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/imageProcess/ApillarImageProcess.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cameraBasic/CameraAp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="722">
+              <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -204,105 +151,73 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/vehicle.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/imageProcess/FaceProcess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Params/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+            <state relative-caret-position="532">
+              <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://F:/java web software/jdk1.8/src.zip!/java/lang/Integer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="765" selection-start-line="765" selection-end-line="765" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Params/PropertiesLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#274#290#0" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Camera/CaptureBinocular.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#paintComponent#0;class#CaptureBinocular#0" />
-                <element signature="e#5212#5213#0" expanded="true" />
-                <element signature="e#5306#5307#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/test/java/a.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ThreadPool/ThreadPoolUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
+            <state relative-caret-position="190">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="37" column="9" selection-start-line="8" selection-start-column="8" selection-end-line="37" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/imageProcess/BodyProcess.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="13" column="60" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/doubleCameraCalib.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/haarcascade_frontalface_default.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/imageProcess/EyeProcess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="56" column="183" selection-start-line="56" selection-start-column="183" selection-end-line="56" selection-end-column="183" />
+            <state relative-caret-position="1900">
+              <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://F:/java web software/jdk1.8/src.zip!/java/awt/image/BufferedImage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="419" selection-start-line="419" selection-end-line="419" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://F:/java web software/jdk1.8/src.zip!/java/lang/NumberFormatException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
             </state>
           </provider>
         </entry>
@@ -335,8 +250,15 @@
       <find>paintComponent</find>
       <find>ipho</find>
       <find>PropertiesLoader</find>
+      <find>Waiting!!!</find>
+      <find>The center of the eye</find>
       <find>mat2BI</find>
       <find>detectMultiScale</find>
+      <find>Constants.paramsHash</find>
+      <find>Jf</find>
+      <find>DATE</find>
+      <find>left</find>
+      <find>next</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -345,14 +267,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/opencv/Utils/ParamsInput.java" />
-        <option value="$PROJECT_DIR$/src/main/java/opencv/Singleton/SingletonParamHolder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/opencv/Utils/ApillarVedioUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/opencv/ThreadPool/ThreadPoolUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/VehicleMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/OpencvMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/JavaCvMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cameraCatch/CaptureBasic.java" />
         <option value="$PROJECT_DIR$/src/main/java/opencv/Singleton/SingletonMethodHolder.java" />
         <option value="$PROJECT_DIR$/src/main/java/opencv/cameraBasic/CameraApillar.java" />
         <option value="$PROJECT_DIR$/src/main/java/opencv/cameraBasic/CameraBinocular.java" />
@@ -376,8 +290,6 @@
         <option value="$PROJECT_DIR$/src/main/java/cameraBasic/CameraBinocular.java" />
         <option value="$PROJECT_DIR$/src/main/java/Utils/MatrixPerspectiveGet.java" />
         <option value="$PROJECT_DIR$/src/main/java/cameraBasic/DetectFaceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/imageProcess/BinocularImageProcess.java" />
-        <option value="$PROJECT_DIR$/src/main/java/imageProcess/FaceProcess.java" />
         <option value="$PROJECT_DIR$/src/main/java/imageProcess/BodyProcess.java" />
         <option value="$PROJECT_DIR$/src/main/java/Camera/CaptureB.java" />
         <option value="$PROJECT_DIR$/src/main/java/Camera/CaptureA.java" />
@@ -388,14 +300,24 @@
         <option value="$PROJECT_DIR$/src/main/java/Camera/CaptureApillar.java" />
         <option value="$PROJECT_DIR$/src/main/java/cameraBasic/Camera.java" />
         <option value="$PROJECT_DIR$/conf/vehicle.txt" />
-        <option value="$PROJECT_DIR$/conf/vehicle.properties" />
         <option value="$PROJECT_DIR$/src/main/java/Camera/DoubleCameraCalib.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jFrameBeans/MyJframe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Camera/CaptureBinocular.java" />
         <option value="$PROJECT_DIR$/src/main/java/Params/PropertiesLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Params/Constants.java" />
+        <option value="$PROJECT_DIR$/src/test/java/b.java" />
         <option value="$PROJECT_DIR$/src/main/java/imageProcess/EyeProcess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jFrameBeans/MyJframe.java" />
+        <option value="$PROJECT_DIR$/conf/vehicle.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/Camera/CaptureBinocular.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Params/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/ThreadPool/ThreadPoolUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Camera/CaptureBinocularLeft.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Camera/CaptureBinocularRight.java" />
+        <option value="$PROJECT_DIR$/src/main/java/imageProcess/BinocularImageProcess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/imageProcess/FaceProcess.java" />
+        <option value="$PROJECT_DIR$/src/test/java/JavaOffer/Solution.java" />
+        <option value="$PROJECT_DIR$/src/test/java/JavaOffer/test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/test/java/a.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Solution.java" />
       </list>
     </option>
   </component>
@@ -414,17 +336,49 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="138" />
-    <option name="y" value="68" />
-    <option name="width" value="1347" />
-    <option name="height" value="975" />
+    <option name="x" value="122" />
+    <option name="y" value="48" />
+    <option name="width" value="1541" />
+    <option name="height" value="950" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vehicle_java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vehicle_java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vehicle_java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vehicle_java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -436,93 +390,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vehicle_java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vehicle_java" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vehicle_java" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vehicle_java" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="opencv-346.jar" type="ab9368bb:PsiFileNode" />
-            </path>
-            <path>
-              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vehicle_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vehicle_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vehicle_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vehicle_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Camera" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vehicle_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="imageProcess" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vehicle_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Params" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vehicle_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ThreadPool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vehicle_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561536743059" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562834354131" />
     <property name="last_opened_file_path" value="F:/opencv/build/java/opencv-346.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -533,11 +407,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dragon\Desktop\learning\vehicle_java\src\test\java" />
       <recent name="C:\Users\dragon\Desktop\learning\vehicle_java\conf" />
       <recent name="C:\Users\dragon\Desktop\learning\vehicle_java\src\main\image" />
       <recent name="C:\Users\dragon\Desktop\learning\vehicle_java" />
       <recent name="C:\Users\dragon\Desktop\learning\vehicle_java\src\main" />
-      <recent name="C:\Users\dragon\Desktop\learning\vehicle_java\src\main\conf\confUtils" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -546,8 +420,8 @@
       <recent name="Camera" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\dragon\Desktop\learning\vehicle_java\lib" />
       <recent name="C:\Users\dragon\Desktop\learning\vehicle_java\conf" />
+      <recent name="C:\Users\dragon\Desktop\learning\vehicle_java\lib" />
       <recent name="C:\Users\dragon\Desktop\learning\projects\vehicle_java" />
       <recent name="C:\Users\dragon\Desktop\learning\projects\vehicle_java\src\main\java" />
       <recent name="C:\Users\dragon\Desktop\learning\projects\vehicle_java\src\main\java\beans" />
@@ -565,29 +439,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CaptureBinocular">
+  <component name="RunManager" selected="Application.a">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Camera" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cameraBasic.Camera" />
-      <module name="vehicle" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cameraBasic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CaptureApillar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Camera.CaptureApillar" />
+    <configuration name="CaptureBinocularLeft" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Camera.CaptureBinocularLeft" />
       <module name="vehicle" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -600,41 +460,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CaptureBasicTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cameraBasic.CaptureBasicTest" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="vehicle" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cameraBasic.CameraAp" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CaptureBinocular" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Camera.CaptureBinocular" />
+    <configuration name="ThreadPoolUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThreadPool.ThreadPoolUtil" />
       <module name="vehicle" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Camera.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PropertiesLoader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Params.PropertiesLoader" />
-      <module name="vehicle" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Params.*" />
+          <option name="PATTERN" value="ThreadPool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -644,6 +484,28 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="a" />
+      <module name="vehicle" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaOffer.test" />
+      <module name="vehicle" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JavaOffer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -672,19 +534,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CaptureBasicTest" />
-      <item itemvalue="Application.CaptureBinocular" />
-      <item itemvalue="Application.CaptureApillar" />
-      <item itemvalue="Application.Camera" />
-      <item itemvalue="Application.PropertiesLoader" />
+      <item itemvalue="Application.CaptureBinocularLeft" />
+      <item itemvalue="Application.ThreadPoolUtil" />
+      <item itemvalue="Application.a" />
+      <item itemvalue="Application.test" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CaptureBinocular" />
-        <item itemvalue="Application.PropertiesLoader" />
-        <item itemvalue="Application.Camera" />
-        <item itemvalue="Application.CaptureApillar" />
-        <item itemvalue="Application.CaptureBasicTest" />
+        <item itemvalue="Application.a" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.ThreadPoolUtil" />
+        <item itemvalue="Application.CaptureBinocularLeft" />
       </list>
     </recent_temporary>
   </component>
@@ -713,7 +575,9 @@
       <workItem from="1560487957669" duration="18000" />
       <workItem from="1560827992551" duration="233000" />
       <workItem from="1560930415728" duration="5199000" />
-      <workItem from="1561426732313" duration="23400000" />
+      <workItem from="1561426732313" duration="59116000" />
+      <workItem from="1562383724495" duration="6303000" />
+      <workItem from="1562834255610" duration="693000" />
     </task>
     <servers />
   </component>
@@ -723,13 +587,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63700000" />
+    <option name="totallyTimeSpent" value="106412000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="390" y="74" width="1347" height="975" extended-state="0" />
-    <editor active="true" />
+    <frame x="212" y="77" width="1541" height="950" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28749028" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25725862" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -738,18 +601,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26867336" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49520257" visible="true" weight="0.31862745" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2664437" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49520257" weight="0.24905184" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2753623" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.24972129" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50479746" side_tool="true" weight="0.1921824" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4946695" weight="0.33700982" />
-      <window_info anchor="right" id="Coverage" side_tool="true" visible="true" weight="0.08469308" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4946695" weight="0.33444816" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -760,6 +622,7 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="right" x="309" y="318" width="1419" height="753" id="Byte Code Viewer" order="9" type="FLOATING" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" visible="true" weight="0.08098068" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -769,73 +632,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/OpencvMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/matUtils.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Params/ThreadConstants.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Params/VariableParams.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/beans/MatBeans.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Params/Parameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/java web software/jdk1.8/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="747" selection-start-line="747" selection-end-line="747" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cameraBasic/CameraBin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/javacv_repository/org/bytedeco/javacv/1.4.1/javacv-1.4.1-sources.jar!/org/bytedeco/javacv/OpenCVFrameGrabber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="221" selection-start-line="221" selection-end-line="221" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Singleton/SingletonMethodHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/ChangeMatUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Utils/SpaceComputeUtils.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Params/SpaceNode.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/imageProcess/MatrixPerspectiveGet.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -876,49 +672,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-192">
           <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Camera/CaptureA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding>
-            <element signature="e#62#63#0" expanded="true" />
-            <element signature="e#98#99#0" expanded="true" />
-            <element signature="e#168#169#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/haarcascade_frontalface_default.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Camera/CaptureA.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/test.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cameraBasic/CaptureBasicTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="126" column="49" selection-start-line="126" selection-start-column="49" selection-end-line="126" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/imageProcess/BinocularImageProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -929,28 +691,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/imageProcess/FaceProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cameraBasic/Camera.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="76" column="9" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/haarcascade_eye.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/opencv-346.jar!/org/opencv/calib3d/Calib3d.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -959,28 +705,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/doubleCameraCalib.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-863" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cameraBasic/CaptureB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2983">
           <caret line="157" column="7" selection-start-line="157" selection-start-column="7" selection-end-line="157" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cameraBasic/CameraAp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -991,41 +719,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/imageProcess/BodyProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/vehicle.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="55" selection-start-column="55" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://F:/java web software/jdk1.8/src.zip!/java/util/Properties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="164" column="31" selection-start-line="164" selection-start-column="31" selection-end-line="164" selection-end-column="31" />
-          <folding>
-            <element signature="e#5711#5712#0" expanded="true" />
-            <element signature="e#5749#5750#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jFrameBeans/MyJframe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1033,12 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1261">
           <caret line="91" selection-start-line="91" selection-end-line="91" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setAlpha#0;class#DetectFaceTest#0" />
-            <element signature="method#watermark#0;class#DetectFaceTest#0" />
-            <element signature="method#simpleMerge#0;class#DetectFaceTest#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1046,52 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" selection-start-line="7" selection-end-line="16" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Camera/CaptureApillar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
-          <folding>
-            <element signature="method#mat2BI#0;class#CaptureApillar#0" />
-            <element signature="method#paintComponent#0;class#CaptureApillar#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/vehicle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Params/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Params/PropertiesLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#274#290#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1116,46 +761,196 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Camera/CaptureBinocular.java">
+    <entry file="file://$PROJECT_DIR$/conf/vehicle.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state>
+          <caret column="55" selection-start-column="55" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Params/Parameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Camera/CaptureApillar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#paintComponent#0;class#CaptureBinocular#0" />
-            <element signature="e#5212#5213#0" expanded="true" />
-            <element signature="e#5306#5307#0" expanded="true" />
+            <element signature="method#mat2BI#0;class#CaptureApillar#0" />
+            <element signature="method#paintComponent#0;class#CaptureApillar#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/imageProcess/EyeProcess.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/jFrameBeans/MyJframe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="56" column="183" selection-start-line="56" selection-start-column="183" selection-end-line="56" selection-end-column="183" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="320">
+          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/vehicle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Params/PropertiesLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Params/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/imageProcess/ApillarImageProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="6">
           <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ThreadPool/ThreadPoolUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Camera/CaptureBinocularLeft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Camera/CaptureBinocularRight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/opencv-346.jar!/org/opencv/core/Rect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/JavaOffer/test.java" />
+    <entry file="jar://F:/java web software/jdk1.8/src.zip!/javax/swing/tree/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/JavaOffer/Solution.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/JavaOffer/test.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/b.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/imageProcess/BinocularImageProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/OpencvMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/haarcascade_eye.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/haarcascade_eye_copy.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cameraBasic/CameraAp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ThreadPool/ThreadPoolUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/imageProcess/FaceProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
+        <state relative-caret-position="532">
+          <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="37" column="9" selection-start-line="8" selection-start-column="8" selection-end-line="37" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/imageProcess/BodyProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="13" column="60" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/doubleCameraCalib.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/haarcascade_frontalface_default.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/imageProcess/EyeProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1900">
+          <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/a.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
         </state>
       </provider>
     </entry>

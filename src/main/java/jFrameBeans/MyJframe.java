@@ -18,6 +18,16 @@ public class MyJframe extends JFrame{
 		
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
+
+	public MyJframe(String str) {
+		this.pack();
+
+		this.setTitle(str);
+
+		this.setVisible(true);
+
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
 	
 	public static void main(String[] args) {
 

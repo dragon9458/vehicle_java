@@ -27,4 +27,19 @@ public class FaceProcess {
         }
         return img;
     }
+
+    public static Mat detectFaceByCID(Mat img) throws Exception {
+
+        faceDetector.detectMultiScale(img, faceDetections);
+
+        rects = faceDetections.toArray();
+
+        if(rects != null && rects.length >= 1){
+            for (Rect rect : rects) {
+                Imgproc.rectangle(img, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height),
+                        new Scalar(0, 0, 255), 2);
+            }
+        }
+        return img;
+    }
 }
